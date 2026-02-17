@@ -17,6 +17,7 @@ export default function () {
     ["Interest:", "AI / ML"],
     ["Freelance:", "Available"],
   ];
+  
   return (
     <div>
         <section id="about" className=" mt-30 flex items-center justify-center  text-white mx-16">
@@ -59,6 +60,9 @@ competitive programming driven by a desire for continuous learning and impactful
 
 
       </div>
+     
+        <a href="CV.pdf" download className="inline-flex items-center justify-center bg-white text-black px-8 py-3 text-sm font-medium hover:bg-white/90 transition">
+        Download CV</a>
 
 
       </div>
