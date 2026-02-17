@@ -6,7 +6,7 @@ import { Facebook,Github,Mail,Send,Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-black text-white px-4 sm:px-6 md:px-10" >
+    <section id="home" className="mt-30 mx-40 flex items-center justify-center  text-white px-4 sm:px-6 md:px-10" >
     <div className="flex flex-col md:flex-row items-center justify-center gap-10">
       <div className="flex justify-center md:justify-center">
         {/* <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
