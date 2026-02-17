@@ -17,12 +17,18 @@ export default function () {
     ["Interest:", "AI / ML"],
     ["Freelance:", "Available"],
   ];
+
+  const items=[
+    {year:"2021-2027", title:"Rajshahi University of Engineering and Technology", subtitle:"B.Sc. in Computer Science and Engineering."},
+    {year:"2019-2021", title:"Carmichael College, Rangpur", subtitle:"Higher Secondary Certificate (HSC)."},
+    {year:"2013-2019", title:"Yakubia Girls' High School, Bogura", subtitle:"Secondary School Certificate (SSC)."},
+  ]
   
   return (
     <div>
         <section id="about" className=" mt-30 flex items-center justify-center  text-white mx-16">
       <div className='flex flex-col'>
-      <h2 className="ftext-3xl md:text-4xl font-semibold mb-6">About Me</h2>
+      <h2 className="text-xl md:text-4xl font-semibold mb-6">About Me</h2>
       <p className=" text-white/80"> Hi my name is Nazifa Fairuz Zuthi, and I am a passionate Full-Stack Developer
        with a strong focus on AI and Machine Learning. With a solid foundation in both front-end and back-end development,
         I have honed my skills in creating dynamic and responsive web applications.</p>
@@ -63,6 +69,34 @@ competitive programming driven by a desire for continuous learning and impactful
      
         <a href="CV.pdf" download className="inline-flex items-center justify-center bg-white text-black px-8 py-3 text-sm font-medium hover:bg-white/90 transition">
         Download CV</a>
+
+        <div className='py-16'>
+            <div className="mb-8 text-xl font-semibold">Education</div> 
+             
+             <ul className="relative">
+                <div className='absolute '>
+                    <ul className="space-y-6">
+                        {items.map((item, index) => (
+                            <li key={index} className="flex items-start gap-4">
+                                 <span className="rounded-full bg-white/10 px-4 py-1 text-xs text-white/80">{item.year}</span>
+                                         
+              <div>
+                <p className="font-medium">{item.title}</p>
+                <p className="text-sm text-white/60">{item.subtitle}</p>
+              </div>
+            </li>
+          ))}
+         </ul>
+
+                </div>
+              
+
+             </ul>
+
+            
+
+
+        </div>
 
 
       </div>
