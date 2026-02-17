@@ -67,7 +67,7 @@ competitive programming driven by a desire for continuous learning and impactful
 
       </div>
      
-        <a href="CV.pdf" download className="inline-flex items-center justify-center bg-white text-black px-8 py-3 text-sm font-medium hover:bg-white/90 transition">
+        <a href="CV.pdf" download className="inline-flex items-center justify-center bg-white text-black px-8 py-3 text-sm font-medium hover:bg-white/40 transition">
         Download CV</a>
 
         <div className='py-16'>

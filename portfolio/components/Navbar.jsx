@@ -56,8 +56,7 @@ export default function Navbar() {
             
             </p> 
             <p className={`${open && 'hidden'} absolute left-32 shadow-md rounded-md
-                 w-0 p-0 text-black bg-white duration-100 overflow-hidden group-hover:w-fit group-hover:p-2 group-hover:left-16
-                `}>{item.label}</p>
+                 w-0 p-0 text-black bg-white duration-100 overflow-hidden group-hover:w-fit group-hover:p-2 group-hover:left-16`}>{item.label}</p>
 
 
             </a></li>

@@ -44,11 +44,11 @@ competitive programming. Passionate about innovative AI applications, especially
 competitive programming driven by a desire for continuous learning and impactful contributions.</div> */}
 
 <div className="flex flex-row gap-3">
-  <Facebook />
-  <Linkedin />
-  <Mail />
-  <Send />
-  <Github />
+ <a href="https://www.facebook.com/huruzoo77.56" target="_blank" rel="noopener noreferrer"><Facebook className="hover:text-blue-500 transition" /></a>
+ <a href="https://www.linkedin.com/in/nazifa-fairuz-zuthi/" target="_blank" rel="noopener noreferrer"> <Linkedin className="hover:text-blue-400 transition" /></a>
+ <a href="nazifafairuz@example.com" target="_blank" rel="noopener noreferrer"><Mail className="hover:text-red-400 transition" /></a> 
+ <a href="https://t.me/Nazifa_Fairuz_Zuthi" target="_blank" rel="noopener noreferrer"><Send className="hover:text-cyan-400 transition" /></a>
+ <a href="https://github.com/ZohanaZuthi" > <Github className="hover:text-gray-300 transition" /></a>
 
 
 </div>
