@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Home, User, Briefcase, Mail, Layers, Star, Hammer,Menu} from "lucide-react";
 
 
