@@ -4,7 +4,7 @@ export default function Skills() {
     ["ML & AI:", "Supervised, Unsupervised, Reinforcement Learning"],
     ["Deep Learning:", "CNN, NLP, NLTK, TensorFlow, Keras, BERT, Dialogflow"],
     ["Data Science Tools:", "Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn"],
-    ["Web Development:", "HTML, CSS, Django, JavaScript, React"],
+    ["Web Development:", "HTML, CSS, Django, JavaScript, React, Next.js, GO, Rest Framework, FastAPI, Docker"],
     ["Databases:", "MySQL, PostgreSQL"],
     ["Other Skills:", "Data Structures & Algorithms, Git, Competitive Programming"],
     ["Professional Skills:", "Effective Communication, Team Player, Strong Problem Solving, Documentation & Presentation, Time & Event Management"],
