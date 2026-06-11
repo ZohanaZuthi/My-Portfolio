@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight, BrainCircuit, Database, ExternalLink, Sparkles } from "lucide-react";
 import image1 from "../public/image.png";
+import image2 from "../public/image2.png";
 const projects = [
   {
     title: "AI Assistive Technology",
@@ -21,6 +22,17 @@ const projects = [
     stack: ["Next.js", "React", "Django"],
     href: "https://roof-utuu.vercel.app/",
     image: image1,
+    accent: "from-rose-400 via-fuchsia-500 to-violet-500",
+    pattern: "WEB",
+  },
+  {
+    title: "Frontend Web App",
+    category: "Flight Booking Landing Page",
+    description:
+      "Responsive web application work combining reusable React interfaces, API logic, and clean dashboard-style pages.",
+    stack: ["Next.js", "React", "Django"],
+    href: "https://globe-3bij.vercel.app/",
+    image: image2,
     accent: "from-rose-400 via-fuchsia-500 to-violet-500",
     pattern: "WEB",
   },
