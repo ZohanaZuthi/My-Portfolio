@@ -1,62 +1,64 @@
 "use client";
 
 import Image from "next/image";
-import { TypeAnimation } from 'react-type-animation';
-import { Facebook,Github,Mail,Send,Linkedin } from "lucide-react";
+import { TypeAnimation } from "react-type-animation";
+import { Download, Facebook, Github, Mail, Send, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
-    <section id="home" className="mt-30 mx-40 flex items-center justify-center  text-white px-4 sm:px-6 md:px-10" >
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-      <div className="flex justify-center md:justify-center">
-        {/* <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <path fill="#5C2C26" d="M52.4,-18.9C58.1,0.7,46.3,24.1,26.2,39.4C6.2,54.8,-22.1,62.1,-38.3,50.8C-54.5,39.5,-58.7,9.5,-50.3,-13.6C-41.9,-36.8,-20.9,-53.2,1.2,-53.6C23.3,-54,46.7,-38.4,52.4,-18.9Z" transform="translate(100 100)" />
-</svg> */}
-          <div className="relative  h-50 w-50 rounded-full overflow-hidden md:h-80 md:w-80">
-              <Image src="/profile.jpg" alt="Profile"  width={542} height={500} className="object-cover absolute -inset-6 rounded-full " priority/>
-            
+    <section id="home" className="flex min-h-screen items-center text-white">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 py-20 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="flex justify-center md:justify-start">
+          <div className="relative h-56 w-56 overflow-hidden rounded-full border border-white/15 bg-white/5 shadow-2xl shadow-cyan-500/10 md:h-80 md:w-80">
+            <Image src="/profile.JPG" alt="Nazifa Fairuz Zuthi" fill className="object-cover" priority />
           </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-5 text-center md:items-start md:text-left">
+          <p className="text-sm font-medium uppercase tracking-[0.28em] text-cyan-200/80">
+            Full Stack Developer
+          </p>
+          <h1 className="text-4xl font-semibold leading-tight md:text-6xl">Nazifa Fairuz Zuthi</h1>
+          <div className="min-h-10 text-2xl text-white/85 md:text-3xl">
+            <TypeAnimation
+              sequence={[
+                "Full-Stack Developer",
+                1200,
+                "Next.js Builder",
+                1200,
+                "Go and Django Builder",
+                1200,
+                "LLM Enthusiast",
+                1200,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="flex text-4xl">Nazifa Fairuz Zuthi</div>
-         <div className="flex  w-[30ch] md:w-[35ch] text-center md:text-left ">
-          
-           <TypeAnimation
-      sequence={[
-          "Full-Stack Developer",
-          1200,
-          "Next.js Builder",
-          1200,
-          "GO and Django Builder",
-          1200,
-          "LLM Enthusiast",
-          1200,
-        ]}
-      wrapper="span"
-      speed={50}
-      className="text-2xl md:text-3xl"
-      repeat={Infinity}
-    /></div>
-    {/* <div>I am currently working as an Aspire Full stack and AI-ML Developer (intern). I am AI & Machine Learning 
-enthusiast with a strong foundation in Machine Learning, Natural Language Processing, and Data Science, 
-currently pursuing a B.Sc. in Computer Science and Engineering. Experienced in end-to-end ML projects and 
-competitive programming. Passionate about innovative AI applications, especially in assistive technologies, and 
-competitive programming driven by a desire for continuous learning and impactful contributions.</div> */}
+          <p className="max-w-2xl text-sm leading-7 text-white/65 md:text-base">
+            AI and Machine Learning enthusiast with full-stack development experience, a strong CSE foundation, and a love for building useful products with clean interfaces.
+          </p>
 
-<div className="flex flex-row gap-3">
- <a href="https://www.facebook.com/huruzoo77.56" target="_blank" rel="noopener noreferrer"><Facebook className="hover:text-blue-500 transition" /></a>
- <a href="https://www.linkedin.com/in/nazifa-fairuz-zuthi/" target="_blank" rel="noopener noreferrer"> <Linkedin className="hover:text-blue-400 transition" /></a>
- <a href="nazifafairuz@example.com" target="_blank" rel="noopener noreferrer"><Mail className="hover:text-red-400 transition" /></a> 
- <a href="https://t.me/Nazifa_Fairuz_Zuthi" target="_blank" rel="noopener noreferrer"><Send className="hover:text-cyan-400 transition" /></a>
- <a href="https://github.com/ZohanaZuthi" > <Github className="hover:text-gray-300 transition" /></a>
+          <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
+            <a href="#projects" className="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-cyan-100">
+              View Projects
+            </a>
+            <a href="/CV.pdf" download className="inline-flex items-center gap-2 rounded-md border border-white/15 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+              <Download size={17} />
+              Download CV
+            </a>
+          </div>
 
-
-</div>
-
-
-    </div>
-
-    </div>
+          <div className="flex flex-row gap-3">
+            <a aria-label="Facebook" href="https://www.facebook.com/huruzoo77.56" target="_blank" rel="noopener noreferrer"><Facebook className="transition hover:text-blue-500" /></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/nazifa-fairuz-zuthi/" target="_blank" rel="noopener noreferrer"><Linkedin className="transition hover:text-blue-400" /></a>
+            <a aria-label="Email" href="mailto:nazifafairuz@example.com"><Mail className="transition hover:text-red-400" /></a>
+            <a aria-label="Telegram" href="https://t.me/Nazifa_Fairuz_Zuthi" target="_blank" rel="noopener noreferrer"><Send className="transition hover:text-cyan-400" /></a>
+            <a aria-label="GitHub" href="https://github.com/ZohanaZuthi" target="_blank" rel="noopener noreferrer"><Github className="transition hover:text-gray-400" /></a>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
